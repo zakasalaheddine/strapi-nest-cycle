@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "birds",
+  "info": {
+    "name": "bird",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ringNumber": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sexe": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "bird_type": {
+      "via": "birds",
+      "model": "bird-type"
+    },
+    "birds_nests": {
+      "via": "male",
+      "collection": "birds-nest"
+    },
+    "birds_nests_females": {
+      "via": "female",
+      "collection": "birds-nest"
+    },
+    "sibling_detail": {
+      "via": "bird",
+      "model": "sibling-details"
+    }
+  }
+}

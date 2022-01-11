@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sibling_details",
+  "info": {
+    "name": "siblingDetails"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sibling": {
+      "model": "siblings",
+      "via": "sibling_details"
+    },
+    "bird": {
+      "model": "bird",
+      "via": "sibling_detail"
+    }
+  }
+}

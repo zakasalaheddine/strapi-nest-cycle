@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/siblings",
+      "handler": "siblings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/siblings/count",
+      "handler": "siblings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/siblings/:id",
+      "handler": "siblings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/siblings",
+      "handler": "siblings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/siblings/:id",
+      "handler": "siblings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/siblings/:id",
+      "handler": "siblings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

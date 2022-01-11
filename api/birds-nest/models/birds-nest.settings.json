@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "birds_nests",
+  "info": {
+    "name": "BirdsNest"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "male": {
+      "model": "bird",
+      "via": "birds_nests"
+    },
+    "female": {
+      "model": "bird",
+      "via": "birds_nests_females"
+    },
+    "eggs": {
+      "via": "birds_nest",
+      "collection": "eggs"
+    }
+  }
+}

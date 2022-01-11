@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sibling-details",
+      "handler": "sibling-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sibling-details/count",
+      "handler": "sibling-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sibling-details/:id",
+      "handler": "sibling-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sibling-details",
+      "handler": "sibling-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sibling-details/:id",
+      "handler": "sibling-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sibling-details/:id",
+      "handler": "sibling-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

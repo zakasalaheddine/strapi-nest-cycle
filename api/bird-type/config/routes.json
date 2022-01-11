@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bird-types",
+      "handler": "bird-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bird-types/count",
+      "handler": "bird-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bird-types/:id",
+      "handler": "bird-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bird-types",
+      "handler": "bird-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bird-types/:id",
+      "handler": "bird-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bird-types/:id",
+      "handler": "bird-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/birds-nests",
+      "handler": "birds-nest.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/birds-nests/count",
+      "handler": "birds-nest.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/birds-nests/:id",
+      "handler": "birds-nest.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/birds-nests",
+      "handler": "birds-nest.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/birds-nests/:id",
+      "handler": "birds-nest.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/birds-nests/:id",
+      "handler": "birds-nest.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

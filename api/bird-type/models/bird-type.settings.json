@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bird_types",
+  "info": {
+    "name": "birdType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "birds": {
+      "via": "bird_type",
+      "collection": "bird"
+    }
+  }
+}

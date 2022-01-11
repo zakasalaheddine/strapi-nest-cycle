@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eggs",
+  "info": {
+    "name": "eggs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dateBirth": {
+      "type": "date"
+    },
+    "dateHash": {
+      "type": "date"
+    },
+    "birds_nest": {
+      "via": "eggs",
+      "model": "birds-nest"
+    },
+    "birdCreated": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
